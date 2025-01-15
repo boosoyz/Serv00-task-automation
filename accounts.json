@@ -1,0 +1,38 @@
+{
+  "accounts": [
+    {
+      "username": "your username",
+      "password": "your password",
+      "panel": "s1.serv00.com",
+      "tasks": [
+      "/usr/home/your/domains/./666.sh",
+      "/usr/home/your/domains/./backup.sh"
+      ]
+    },
+    {
+      "username": "your username",
+      "password": "your password",
+      "panel": "s5.serv00.com",
+      "tasks": [
+      "/usr/home/your/x-ui/./xui.sh"
+      ]
+    },
+    {
+      "username": "your username",
+      "password": "your password",
+      "panel": "s10.serv00.com",
+      "tasks": [
+      "/usr/home/your/.333/./333.sh"
+      ]
+    },
+    {
+      "username": "your username",
+      "password": "your password",
+      "panel": "s14.serv00.com",
+      "tasks": [
+      "/usr/home/your/domains/blog.your.nyc.mn/halo/./halo.sh",
+      "/usr/home/your/domains/./backup.sh"
+      ]
+    }
+  ]
+}
