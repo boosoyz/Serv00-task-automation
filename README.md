@@ -1,34 +1,17 @@
 
-# mtproxy
 
-这是一个可以在serv00便用的 MTProxy 代理的绿色脚本
+## 脚本描述
 
-## 安装方式
+该脚本从 accounts.json 文件中读取用户的 SSH 登录信息和任务列表，然后逐一登录到远程服务器，
+为每个用户添加 Crontab 定时任务（每 13 分钟执行一次）。同时，脚本会检查任务是否已存在，避免重复添加。
 
-执行如下代码进行安装
+## 脚本功能
 
-```bash
-curl -s -O https://raw.githubusercontent.com/boosoyz/mtproto/main/mtg.sh
+1.批量处理多个账户。
+2.每个账户支持多个任务。
+3.自动检查任务是否已存在，避免重复添加。
+4.每个任务独立配置运行周期（默认每 13 分钟执行一次）。
+5.完成一个账户的任务后自动退出 SSH，再继续下一个账户。
 
-chmod +x mtg.sh
-
-./mtg.sh
-```
-
-## 卸载安装
-
-因为是绿色版卸载极其简单，直接删除所在目录即可。
-
-```bash
-rm -rf /home/${USER}/mtg
-```
-
-# 可自行选择保活
-
-设置定时任务每13分钟执行一次
-
-
-## 引用项目
-
-- <https://github.com/TelegramMessenger/MTProxy>
-- <https://github.com/9seconds/mtg>
+## 使用方法
+将脚本文件上传到，青龙面板脚本管理，
